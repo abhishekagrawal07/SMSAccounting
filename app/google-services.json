@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "66349907924",
+    "firebase_url": "https://khata-336ec-default-rtdb.firebaseio.com",
+    "project_id": "khata-336ec",
+    "storage_bucket": "khata-336ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66349907924:android:6c246e5136946b3e8e6041",
+        "android_client_info": {
+          "package_name": "com.test.creditinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66349907924-pvq0h6fdeastj6nrku99ki81ra61121v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.creditinfo",
+            "certificate_hash": "9a83fb57085630cceb2b5a7ba18159d240b756aa"
+          }
+        },
+        {
+          "client_id": "66349907924-f9in823lt3un2nmgt3jo99h4l2qa6tdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCISnse5F5EdcXJ_45SxMV-rtVEhku8Lro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66349907924-f9in823lt3un2nmgt3jo99h4l2qa6tdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
