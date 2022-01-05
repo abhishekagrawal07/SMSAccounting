@@ -11,14 +11,24 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import com.hbb20.CountryCodePicker;
+
+import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
+
 public class LoginViaPhone extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_via_phone);
+
+
 
         MaterialToolbar toolbar = (MaterialToolbar) findViewById(R.id.loginPhoneToolbar);
         setSupportActionBar(toolbar);
@@ -48,22 +58,27 @@ public class LoginViaPhone extends AppCompatActivity {
 
         //call PhoneOTPPage with proceed button
         final EditText loginViaPhoneEditText  = findViewById(R.id.loginViaPhoneEditText);
-
         Button proceedBtn = (Button) findViewById(R.id.phoneProceedBtn);
+        CountryCodePicker Ccp = (CountryCodePicker) findViewById(R.id.ccp);
+
         proceedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String number = loginViaPhoneEditText.getText().toString().trim();
 
-                if(number.isEmpty() || number.length() < 10 || number.length() > 10)
+                String number = "+" + Ccp.getSelectedCountryCode() + loginViaPhoneEditText.getText().toString();
+
+
+
+                if(number.isEmpty() || number.length() < 10 || number.length() > 15 )
                 {
                     loginViaPhoneEditText.setError("Enter the valid number");
                     loginViaPhoneEditText.requestFocus();
                     return;
                 }
 
-                    String numbers = "+" + "91" + number;
+
+                    String numbers = number;
                     Intent intent = new Intent(LoginViaPhone.this, PhoneOTPPage.class);
                     intent.putExtra("phonenumber",numbers);
 

@@ -63,6 +63,8 @@ public class RegistrationOTPPage extends AppCompatActivity {
 
         sendVerificationCode(phoneNumber);
 
+
+
         findViewById(R.id.submitOTPBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
