@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSlide_1"
+    android:background="@color/lightgrey"
     >
 
     <TextView
@@ -36,6 +36,6 @@
         android:layout_marginEnd="91dp"
         android:layout_marginBottom="301dp"
         android:contentDescription="@string/todo1"
-        app:srcCompat="@drawable/slide1" />
+        app:srcCompat="@drawable/moneybag" />
 
 </RelativeLayout>

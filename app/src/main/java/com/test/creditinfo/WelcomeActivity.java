@@ -13,7 +13,7 @@ import android.widget.Button;
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewPager mPager;
-    private int[] layouts = {R.layout.first_slide,R.layout.second_slide,R.layout.third_slide};
+    private int[] layouts = {R.layout.first_slide,R.layout.third_slide};
     private MpagerAdapter mpagerAdapter;
 
     private Button BnNext,BnSkip;
